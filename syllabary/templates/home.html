@@ -1,1 +1,17 @@
-{% extends "layout.html" %} {% block content %} {% endblock content %}
+{% extends "layout.html" %} {% block content %}
+
+<h1>Welcome To Synap Syllabary!</h1>
+
+<h3>Want To Grow And Improve Yourself Making Your Destiny Better?</h3>
+<a href="{% url 'learn' %}"><button>Begin Your Learning Journey</button></a>
+
+<h3>Consider Yourself A Tough Nut? Test Yourself With Quizzes!</h3>
+<a href="{% url 'quizzes' %}"><button>Start Quiz</button></a>
+
+<h3>Want To Give Back To This Community? Add A New Word To Our Vocab!</h3>
+<a href="{% url 'add_word' %}"><button>Add Word</button></a>
+
+<h3>Want To Know How Far Along Have You Came? See Your Progress!</h3>
+<a href="{% url 'my_progress' %}"><button>My Progress</button></a>
+
+{% endblock content %}
